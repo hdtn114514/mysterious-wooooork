@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LessonLens · 教案点评工作台</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark">L</div><div><strong>LessonLens</strong><span>教案点评工作台</span></div></div>
+      <nav class="nav"><button class="nav-item active" data-view="home"><span class="nav-icon">◈</span>工作台</button><button class="nav-item" data-view="library"><span class="nav-icon">▱</span>点评库</button><button class="nav-item" data-view="actions"><span class="nav-icon">✓</span>行动清单</button></nav>
+      <div class="sidebar-foot"><div class="mini-label">分析引擎</div><div class="engine"><span class="status-dot"></span><span id="engine-status">本地演示模式</span><span class="engine-pulse"></span></div><p>支持多模态 LLM 与 PPT 页面渲染</p></div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><div><div class="eyebrow">TEACHING REVIEW / 01</div><h1 id="page-title">今天，让一份教案更清晰</h1></div><div class="top-actions"><button class="icon-button" title="搜索">⌕</button><div class="avatar">林</div></div></header>
+      <div id="app-content"></div>
+    </main>
+  </div>
+  <div id="toast" class="toast"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
